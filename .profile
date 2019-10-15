@@ -8,8 +8,7 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
-#echo "Hello you"
-source ~/.bashrc
+echo "Priscilla Short's Terminal"
 
 # Define some colors first:
 RED='\[\e[1;31m\]'
