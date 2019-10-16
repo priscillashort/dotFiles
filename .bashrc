@@ -1,10 +1,27 @@
-echo "bashrc"
+#echo "bashrc"
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
 source ~/.aliases
 source ~/.prompt
+
+
+# Define some colors first:
+#RED='\[\e[1;31m\]'
+RED='[\e[31m\]'
+BOLDYELLOW='\[\e[1;33m\]'
+GREEN='\[\e[0;32m\]'
+BLUE='\[\e[1;34m\]'
+DARKBROWN='\[\e[1;33m\]'
+DARKGRAY='\[\e[1;30m\]'
+CUSTOMCOLORMIX='\[\e[1;30m\]'
+DARKCUSTOMCOLORMIX='\[\e[1;32m\]'
+LIGHTBLUE="\[\033[1;36m\]"
+PURPLE='\[\e[1;35m\]'
+NC='\[\e[0m\]' # No Color
+
+#export PS1="\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\w\[\e[m\]\[\e[32m\]]\[\e[m\]\[\e[32;47m\]\\$\[\e[m\] "
 
 # If not running interactively, don't do anything
 case $- in
@@ -115,3 +132,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+FALL="🍁"
+WINTER="❄"
+FIRE="🔥"
+
+
+PS1="\[\e[3;44m\]\u\[\e[30m\]\w\[\e[m\]🍁: "

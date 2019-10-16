@@ -1,2 +1,5 @@
 
 alias g='git status'
+alias gp='git push'
+alias ga='git add .'
+alias gc='git commit'

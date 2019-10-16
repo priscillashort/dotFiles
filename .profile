@@ -8,7 +8,8 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
-echo "Priscilla Short's Terminal"
+#echo "profile"
+#PS1="[\[\e[1;34m\]$WINDOW\[\e[0m\]:\[\e[1;$UCOL\]\$(sens)\[\e[0m\]$SEP\u@\[\e[1;$ENV\]\h.$ENAME\[\e[0m\]:\[\e[1;31m\]\$(get_branch)\[\e[0m\] \w]\\$ ";
 
 # Define some colors first:
 RED='\[\e[1;31m\]'
