@@ -4,8 +4,6 @@
 # for examples
 
 source ~/.aliases
-source ~/.prompt
-
 
 # Define some colors first:
 #RED='\[\e[1;31m\]'
@@ -20,6 +18,16 @@ DARKCUSTOMCOLORMIX='\[\e[1;32m\]'
 LIGHTBLUE="\[\033[1;36m\]"
 PURPLE='\[\e[1;35m\]'
 NC='\[\e[0m\]' # No Color
+ITALBLUE='\[\e[3;44m\]'
+DKBLUE='\[\e[30m\]'
+RESETCOLOR='\[\e[m\]'
+
+FALL="🍁"
+WINTER="❄"
+FIRE="🔥"
+
+export GOPATH=$HOME/go
+export PATH="$PATH:$GOPATH/bin"
 
 #export PS1="\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\w\[\e[m\]\[\e[32m\]]\[\e[m\]\[\e[32;47m\]\\$\[\e[m\] "
 
@@ -133,9 +141,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-FALL="🍁"
-WINTER="❄"
-FIRE="🔥"
+PS1="$ITALBLUE\u$DKBLUE\w$RESETCOLOR$FALL: "
 
-
-PS1="\[\e[3;44m\]\u\[\e[30m\]\w\[\e[m\]🍁: "
+source ~/.prompt
