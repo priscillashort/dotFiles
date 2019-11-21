@@ -30,7 +30,7 @@ export GOPATH=$HOME/go
 export GOLANGPATH=$HOME/goLang/go
 #export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:$GOLANGPATH/bin"
-export PORT="4000"
+#export PORT="4000"
 export CHROMEHOST="0.0.0.0"
 
 #export PS1="\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\w\[\e[m\]\[\e[32m\]]\[\e[m\]\[\e[32;47m\]\\$\[\e[m\] "
