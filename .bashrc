@@ -145,6 +145,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-PS1="$ITALBLUE\u$DKBLUE\w$RESETCOLOR$FALL: "
+PS1="$ITALBLUE\u$DKBLUE\w$RESETCOLOR$WINTER: "
 
 source ~/.prompt
