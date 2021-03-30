@@ -25,6 +25,7 @@ RESETCOLOR='\[\e[m\]'
 FALL="🍁"
 WINTER="❄"
 FIRE="🔥"
+ROSE="🌹"
 
 export GOPATH=$HOME/go
 export GOLANGPATH=$HOME/goLang/go
@@ -145,6 +146,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-PS1="$ITALBLUE\u$DKBLUE\w$RESETCOLOR$WINTER: "
+PS1="$ITALBLUE\u$DKBLUE\w$RESETCOLOR $ROSE "
 
 source ~/.prompt
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

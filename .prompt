@@ -1,15 +1,15 @@
 
-echo "Priscilla Short's Terminal"
+echo "Priscilla Sorbello's Terminal"
 echo "List of files in directory"
 ls
 
-if [ -d .git ]; then
-  echo "current repo info:"
-  g
-else
-  echo "current directory is not a repo"
-  echo "dotfiles repo info:"
-  cd ~/Excercise5/dotfiles/
-  g
-  cd ~;
-fi;
+#if [ -d .git ]; then
+#  echo "current repo info:"
+#  g
+#else
+#  echo "current directory is not a repo"
+#  echo "dotfiles repo info:"
+#  cd ~/Excercise5/dotfiles/
+#  g
+#  cd ~;
+#fi;
